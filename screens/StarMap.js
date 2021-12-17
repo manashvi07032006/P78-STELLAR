@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, TextInput, StyleSheet, Platform, StatusBar, SafeAreaView, ImageBackgrounda, ImageBackground } from 'react-native';
+import { Text, View, TextInput, StyleSheet, Platform, StatusBar, SafeAreaView, ImageBackground } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 export default class StarMapScreen extends Component {
@@ -25,29 +25,12 @@ export default class StarMapScreen extends Component {
                         placeholder="Enter your longitude"
                         placeholderTextColor="white"
 
-                        // onChangeText={(text) => {
-                        //     this.State({
-                        //         longitude: text
-                        //     })
-                        // }}
 
-                        // onChangeText={(text) => {
-                        //     this.setState(
-                        //         longitude: text
-                        //     )
-                        // }}
-
-                        // onChangeText={() => {
-                        //     this.setState({
-                        //         longitude: 
-                        //     })
-                        // }}
-
-                        // onChangeText={(text) => {
-                        //     this.setState({
-                        //         longitude: text
-                        //     })
-                        // }}
+                         onChangeText={(text) => {
+                             this.setState({
+                                 longitude: text
+                             })
+                         }}
                     />
 
                     <TextInput
